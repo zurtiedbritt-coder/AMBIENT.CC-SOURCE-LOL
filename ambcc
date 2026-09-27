@@ -1,24 +1,3 @@
--- KEY GATE (Ophyn) -- must pass before anything below runs
-local Ophyn = loadstring(game:HttpGet('https://ophyn.space/interface'))()
-getgenv().OphynPassed = false
-Ophyn.new({
-	Title = "Ambient",
-	Description = "Enter your key to continue",
-	Theme = "Plant-Dark",
-	Folder = "AmbientKSY",
-	discord_link = "https://discord.com/invite/DJRfaTjJUW",
-	NotifStyle = "1",
-	KeySystem = {
-		SaveKey = true,
-		API = {
-			{ Type = "platoboost", ServiceId = 32967, Secret = "25c1d97c-4759-4098-a746-e1122be62d1a" },
-		},
-	},
-	Callback = function(key)
-		getgenv().OphynPassed = true
-	end,
-})
-repeat task.wait() until getgenv().OphynPassed
 
 -- ══════════════════════════════════════════════════════════════
 
