@@ -1,6 +1,4 @@
-
--- ══════════════════════════════════════════════════════════════
-
+-- ambient.cc — key gate lives in the loader now; direct boot past this point
 getgenv().AmbientGame = "Hood Customs" -- loader removed: direct boot
 
 local TweenService     = game:GetService("TweenService")
